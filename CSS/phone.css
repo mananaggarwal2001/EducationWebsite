@@ -1,0 +1,62 @@
+/* To make this wesite Responive */
+
+@media  screen and (max-width: 1080px)  {
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 520px;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .rightnav{
+        width: 45%;
+        margin:auto;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #search{
+        width: 100%;
+        padding: 12px 0px;
+    }
+    .rightnav button{
+        width:  100%;
+        margin-top: 19px;
+
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 70px;
+    }
+    .v-nav-resp{
+        opacity: 0;
+    }
+
+    /* Making the CSS For the Main box responsive */
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .box-main img{
+        margin-top: 5%;
+        width: 30%;
+    }
+
+    .box-main .text-big,.text-small,.buttons{
+        text-align: center;
+    }
+
+}
+
+@media  screen and (max-width: 1000px) {
+
+    .section{
+        flex-direction: column-reverse;
+    }
+}

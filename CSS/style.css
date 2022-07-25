@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700;800&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* CSS Reset to the default structures */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Designing */
+
+.burger{
+    display:none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+    vertical-align: center;
+}
+
+.logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 3.2rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: rgb(164, 164, 164);
+}
+
+.navbar {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0px;
+
+
+
+}
+
+.nav-list {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-items: center;
+
+}
+
+.nav-list li {
+    padding: 22px 23px;
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-list li a:hover {
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+
+.rightnav {
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    padding: 7px;
+}
+
+.rightnav .btn {
+    margin-left: 5px;
+    font-size: 18px;
+    background: none;
+    color: white;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+#search {
+    font-size: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    width: 30%;
+    color: white;
+    margin: 0 0.4%;
+    border-radius: 12px;
+    font-weight: bold;
+    outline: none;
+
+}
+
+#search::placeholder {
+    padding-left: 4px;
+}
+
+#search::content {
+    padding: 4px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url("../images/bg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+
+    /* Background Blend mode is used for image rendering of the background that how to render the image when the background is coming */
+
+}
+
+.firstSection {
+    height: 90vh;
+}
+
+/* Styling the Main box which will contain the buttons and the main heading of  the page */
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+
+
+}
+
+.firstHalf {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.secondHalf {
+    width:70%;
+    margin-left: 5%;
+
+}
+
+.secondHalf img {
+    width: 200%;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+
+}
+
+.buttons {
+    display: block;
+
+}
+
+.text-big {
+    font-size: 250%;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.buttons .btn {
+    padding: 8px 20px;
+    margin: 7px 0px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 23px 0px;
+    margin-right: 7px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-sm {
+    padding: 3px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+
+/* Editing the section right */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+/* .thumbnail{
+    width: 5000px;
+    height: 100px;
+} */
+
+/* Heading given in the Section */
+.sectionTag {
+    padding: 18px 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 21px;
+}
+
+.paraitems {
+    padding: 0px 30px;
+    width: 100%;
+}
+
+.sectionsubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hrdesign {
+    border: 2px solid black;
+}
+
+/* Contact Us Section in the website */
+.contact {
+    background-color: #ffe7cf;
+    height: 700px;
+}
+
+.contact .text-big {
+    text-align: center;
+}
+.formclass{
+    max-width: 62%;
+    margin: 4px auto;
+}
+.form-class{
+    width: 100%;
+    font-size: 19px;
+    border:2px solid black;
+    border-radius: 6px;
+    outline:none;
+    margin-bottom: 14px;
+    padding: 11px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formclass .btn{
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    display: block;
+    margin: 0px auto;
+    background: none;
+    color: white;
+    background-color: rgb(251, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formclass .btn:hover{
+    background-color: white;
+    color:black;
+}
+#concern{
+    resize: none;
+}
+
+/* Footer Section Design */
+.center{
+    background-color: black;
+    color:white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 13px 0px;
+    font-size: 120%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+
+
+}
