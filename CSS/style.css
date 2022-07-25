@@ -7,6 +7,9 @@
 }
 
 /* Navbar Designing */
+html{
+    scroll-behavior: smooth;
+}
 
 .burger{
     display:none;
